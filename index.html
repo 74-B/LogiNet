@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>منصة LogiNet</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #f4fbf9;
+      color: #222;
+      direction: rtl;
+    }
+
+    header {
+      background-color: #00796b;
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #00796b;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #444;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .buttons button {
+      background-color: #004d40;
+      color: white;
+      padding: 12px 25px;
+      margin: 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .buttons button:hover {
+      background-color: #002d26;
+    }
+
+    footer {
+      background-color: #00796b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>LogiNet</h1>
+    <p>منصتك الذكية لجمع الزيوت المستعملة وتحويلها إلى وقود حيوي</p>
+  </header>
+
+  <section class="cards">
+    <div class="card">
+      <h3>جمع الزيوت</h3>
+      <p>استخدم التطبيق لطلب استلام الزيوت من المنزل أو المطعم بسهولة.</p>
+    </div>
+
+    <div class="card">
+      <h3>المكافآت</h3>
+      <p>اربح نقاط ومزايا مقابل مساهمتك في إعادة التدوير.</p>
+    </div>
+
+    <div class="card">
+      <h3>شركاؤنا</h3>
+      <p>نتعاون مع شركات النقل والموانئ لتحقيق الاستدامة.</p>
+    </div>
+  </section>
+
+  <div class="buttons">
+    <button onclick="showWelcome()">سجل كمستخدم</button>
+    <button onclick="showPartner()">انضم كشريك لوجستي</button>
+    <button onclick="showRequest()">اطلب استلام الزيوت</button>
+  </div>
+
+  <footer>
+    &copy; 2025 LogiNet. جميع الحقوق محفوظة.
+  </footer>
+
+  <script>
+    function showWelcome() {
+      alert("مرحبًا بك في LogiNet! سجل الآن وابدأ رحلتك نحو بيئة مستدامة.");
+    }
+
+    function showPartner() {
+      alert("نحن نبحث عن شركاء لوجستيين مثلك! انضم إلينا اليوم.");
+    }
+
+    function showRequest() {
+      alert("شكراً لاهتمامك! سنقوم باستلام الزيوت حسب أقرب نقطة لك.");
+    }
+  </script>
+
+</body>
+</html>
